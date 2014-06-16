@@ -10,7 +10,7 @@ function fibIt(indexOfNumber) {
     fibStart.push(fibStart[i - 2] + fibStart[i - 1]);
   }
 
-  console.log( fibStart[indexOfNumber], fibStart );
+  return fibStart[indexOfNumber];
 }
 
 // recursive without an array
