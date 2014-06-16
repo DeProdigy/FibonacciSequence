@@ -5,9 +5,11 @@
 
 function fibIt(indexOfNumber) {
   var fibStart = [1, 1];
+
   for(var i = 2; i <= indexOfNumber; i++){
     fibStart.push(fibStart[i - 2] + fibStart[i - 1]);
   }
+
   console.log( fibStart[indexOfNumber], fibStart );
 }
 
