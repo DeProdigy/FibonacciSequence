@@ -10,3 +10,13 @@ function fibIt(indexOfNumber) {
   }
   console.log( fibStart[indexOfNumber], fibStart );
 }
+
+// recursive without an array
+
+function fibItRec(number, indexOfNumber) {
+  if (number < 2) {
+      return 1;
+  } else {
+      return fibItRec(number - 2, indexOfNumber + 4) + fibItRec(number - 1, indexOfNumber + 4);
+  }
+}
